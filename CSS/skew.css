@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+
+
+
+*, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+  font-family: arial, sans-serif;
+  
+  
+}
+
+.about2 {
+    
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #ffffff, #fcfcfc, #f9f9f9, #f7f7f7, #f4f4f4);
+}
+
+.our-story {
+    width: 80%;
+    margin: 0 auto;
+    
+
+}
+
+.our-story h2 {
+    z-index: 2;
+    position: relative;
+    font-family: 'pacifico';
+    letter-spacing: .2rem;
+    word-spacing: .5rem;
+    font-size: 3rem;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    text-align: center;
+
+}
+
+.about2 h5 {
+    font-family: 'pacifico';
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.info {
+    width: 80%;
+    margin: 0 auto;
+    
+    
+}
+
+
+.info div {
+    text-align: justify;
+    font-family: 'nunito sans';
+    z-index: 2;;
+
+}
+
+.flex-info {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+#right {
+    margin-right: 2%;
+}
+
+#left {
+    margin-left: 2%;
+}
+
+#bottom {
+    
+    position: relative;
+
+}
+
+.end {
+    position: relative;
+    margin-top: 4%;
+}
+
+#bottom p {
+    z-index: 2;
+}
+
+
+
+.background-skewl {
+    position: absolute;
+    width: 20%;
+    height: 40%;
+    top: 10%;
+    left: 60%;
+    background-image: linear-gradient(to top, #ffffff, #fcfcfc, #f9f9f9, #f7f7f7, #f4f4f4);
+    transform: skew(-20deg)
+}
+
+.background-skewr {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    background-image: linear-gradient(to top, #ffffff, #fcfcfc, #f9f9f9, #f7f7f7, #f4f4f4);
+
+}
