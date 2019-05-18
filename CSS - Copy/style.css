@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'karla';
+    background: black;
+    
+    
+}
+
+html {
+    box-sizing: border-box;
+}
+
+
+
+
+.logo {
+    margin-top: 1%;
+}
+
+.logo span {
+    font-size: 7rem;
+    color: yellow;
+    opacity: .2;
+
+}
+
+nav ul {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    
+}
+
+nav li {
+    list-style-type: none;
+    display: inline;
+    margin-left: 2%;
+    
+    
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    
+}
+
+nav {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100vh;
+    position: relative;
+    
+
+     
+}
+
+header::before {
+    background-image: url('/Images/annie-spratt-137316-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+    content: '';
+    display: block;
+    opacity: 0.8; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -2;
+}
+
+.main {
+    /* background-image: linear-gradient(to bottom, #f4f4f4, #f7f7f7, #f9f9f9, #fcfcfc, #ffffff); */
+    background: transparent;
+    
+    
+    
+}
+
+.mainh {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'tangerine';
+    letter-spacing: .2rem;
+}
+
+.mainh span:before {
+    content: "";
+    width: 25%;
+    height: 1rem;
+    border-top: solid black 2px;
+    display: inline-block;
+    margin-right: 3%;
+}
+
+.mainh span:after {
+    content: "";
+    width: 25%;
+    height: 1rem;
+    border-top: solid black 2px;
+    display: inline-block;
+    margin-left: 3%;
+}
+
+
+  
+
+
+
+.title {
+    font-family: "tangerine";
+    display: inline;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 60%;
+    
+}
+
+h2 {
+    font-size: 5rem;
+    word-spacing: 2rem;
+    letter-spacing: .5rem;
+    
+}
+
+.title p {
+    font-size: 2rem;
+    letter-spacing: .3rem;
+    margin-top: 2%;
+}
+
+.art {
+    
+    width: 100%;
+    object-fit: cover;
+}
+
+.full {
+    width: 100%;
+    max-height: 10rem; overflow: hidden;
+    
+    
+}
+
+.full img {
+    max-height: initial;
+    margin-top: -20%;
+}
+
+.aboutlarge {
+    font-size: 3rem;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'tangerine';
+    letter-spacing: .2rem;
+
+    
+}
+
+
+.aboutlarge span:before, .aboutlarge span:after {
+    content: '';
+    display: inline-block;
+    height: 1rem;
+    
+    border-top: 3px solid black;
+
+    
+    width: 25%;
+}
+
+.aboutlarge span:before {
+    margin-right: 3%;
+}
+
+.aboutlarge span:after {
+    margin-left: 3%;
+}
+
+
+
+#hexGrid {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -60px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+.hex {
+    outline: 1px solid transparent;
+    position: relative;
+    visibility: hidden;
+}
+
+.hex::after {
+    content: '';
+    padding-bottom: 86.602%;
+    display: block;
+}
+
+.hexIn {
+    width: 96%;
+    position: absolute;
+    padding-bottom: 110.851%;
+    margin: 0 2%;
+    overflow: hidden;
+    visibility: hidden;
+    outline: 1px solid transparent;
+    -webkit-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+      -ms-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+          transform: rotate3d(0,0,1,-60deg) skewY(30deg)
+}
+
+.hexIn * {
+    position: absolute;
+    visibility: visible;
+    outline: 1px solid transparent;
+}
+
+.hexLink {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    -webkit-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+        -ms-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+            transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+}
+
+
+/***** my images ****/
+
+.hex img {
+    left: -100%;
+    right: -100%;
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+    -webkit-transform: rotate3d(0,0,0,0deg);
+      -ms-transform: rotate3d(0,0,0,0deg);
+          transform: rotate3d(0,0,0,0deg);
+}
+
+.hex h1, .hex p {
+    padding: 5%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(0, 128, 128, 0.8);
+    font-weight: 300;
+    -webkit-transition:  -webkit-transform .2s ease-out, opacity .3s ease-out;
+    transition:          transform .2s ease-out, opacity .3s ease-out;
+}
+
+.hex h1 {
+    bottom: 50%;
+    padding-top: 50%;
+    font-size: 1.5em;
+    z-index: 1;
+    -webkit-transform:translate3d(0,-100%,0);
+      -ms-transform:translate3d(0,-100%,0);
+          transform:translate3d(0,-100%,0);
+}
+
+.hex h1::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 45%;
+    width: 10%;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+
+.hex p {
+    top: 50%;
+    padding-bottom: 50%;
+    
+  -webkit-transform:translate3d(0,100%,0);
+      -ms-transform:translate3d(0,100%,0);
+          transform:translate3d(0,100%,0);
+}
+
+/*** hover ***/
+
+
+.hexLink:hover h1, .hexLink:focus h1,
+.hexLink:hover p, .hexLink:focus p {
+    -webkit-transform:translate3d(0,0,0);
+      -ms-transform:translate3d(0,0,0);
+          transform:translate3d(0,0,0)
+}
+
+/**************** hx size *****/
+
+@media (min-width: 1201px) {
+    #hexGrid {
+        padding-bottom: 4.4%;
+    }
+
+    .hex {
+        width: 20%;
+    }
+
+    .hex:nth-child(9n+6) {
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 901px) {
+    #hexGrid {
+        padding-bottom: 5.5%;
+
+    }
+
+    .hex {
+        width: 25%;
+    }
+
+    .hex:nth-child(7n+5) {
+        margin-left: 12.5%;
+    }
+}
+
+@media (max-width: 900px) and (min-width:  601px) {
+    #hexGrid {
+        padding-bottom: 7.4%;
+        
+    }
+
+    .hex {
+        width: 33.333%;
+    }
+
+    .hex:nth-child(5n+4) {
+        margin-left: 16.666%;
+    }
+}
+
+@media (max-width: 600px) {
+    #hexGrid {
+        padding-bottom: 11.2%
+    }
+    .hex {
+        width: 50%;
+    }
+    .hex:nth-child(3n+3) {
+        margin-left: 25%;
+    }
+}
+
+@media (max-width: 400px) {
+    #hexGrid {
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+.about {
+    background: white;
+}
+
+.about-container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 2%;
+    
+}
+
+.about-container h3 {
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+    padding-bottom: 2%;
+}
+
+.about-container p {
+    /* padding-right: 9rem;*/
+    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+
+}
+
+.contact {
+    min-height: 100vh;
+    background: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+input {
+    display: block;
+    
+    margin-bottom: 2%;
+    
+    height: 2rem;
+    border-radius: 7px;
+    font-size: 1.8rem;
+}
+
+
+.formspring {
+    
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    
+    padding-bottom: 2%;
+    padding-top: 15%;
+    margin-top: 0;
+    background: white;
+}
+
+textarea {
+    width: 100%;
+    height: 8rem;
+}
+
+#button {
+    width: 9rem;
+}
+
+#cform {
+    font-size: 3rem;
+}
